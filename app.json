@@ -7,7 +7,7 @@
       [
         "@stripe/stripe-react-native",
         {
-          "merchantIdentifier": "string",
+          "merchantIdentifier": "merchant.svdone",
           "enableGooglePay": true
         }
       ]
