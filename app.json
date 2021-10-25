@@ -1,0 +1,79 @@
+{
+  "expo": {
+    "name": "SVDONE",
+    "slug": "svdone",
+    "version": "2.0.0",
+    "plugins": [
+      [
+        "@stripe/stripe-react-native",
+        {
+          "merchantIdentifier": "string",
+          "enableGooglePay": true
+        }
+      ]
+    ],
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "backgroundColor": "#f85c70",
+      "resizeMode": "contain"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "usesAppleSignIn": true,
+      "supportsTablet": true,
+      "bundleIdentifier": "com.varinaits.svdone",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to capture and upload user profile image and Listing Image to the server.",
+        "NSPhotoLibraryUsageDescription": "This app needs access to the photo library to select and upload user profile image and Listing Image to the server.",
+        "NSPhotoLibraryAddUsageDescription": "This app needs access to the photo library to select and upload user profile image and Listing Image to the server.",
+        "NSLocationWhenInUseUsageDescription": "This app usages device location on listing information, Listing search Data and User information.",
+        "CFBundleAllowMixedLocalizations": true
+      },
+      "config": {
+        "googleMapsApiKey": "AIzaSyCWPj3zb4DTrHzMdc0REyP2wiA4Q2xLaIc",
+        "googleMobileAdsAppId": "ca-app-pub-8556339087678265~6676027981"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "android": {
+      "package": "com.varinaits.svdone",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCWPj3zb4DTrHzMdc0REyP2wiA4Q2xLaIc"
+        },
+        "googleMobileAdsAppId": "ca-app-pub-8556339087678265~6676027981"
+      },
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#fff"
+      },
+      "permissions": [
+        "CAMERA",
+        "CAMERA_ROLL",
+        "MEDIA_LIBRARY",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "RECORD_AUDIO",
+        "READ_PHONE_STATE",
+        "READ_CONTACTS",
+        "LOCATION"
+      ],
+      "versionCode": 6
+    },
+    "facebookScheme": "fb11223344556677",
+    "facebookAppId": "11223344556677",
+    "facebookDisplayName": "Your App",
+    "scheme": "com.youridentifier",
+    "description": ""
+  }
+}
